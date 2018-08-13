@@ -17,5 +17,9 @@
     "chrome-launcher": "^0.10.2",
     "jest": "^23.5.0",
     "lighthouse": "^2.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zgreen/lighthouse-circleci-example.git"
   }
 }
