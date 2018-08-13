@@ -16,6 +16,9 @@ const launchChromeAndRunLighthouse = (
   });
 
 test("Meaningful first paint score", () =>
-  launchChromeAndRunLighthouse(`https://example.com`).then(({ audits }) =>
-    expect(audits["first-meaningful-paint"].score).toBeGreaterThanOrEqual(50)
+  launchChromeAndRunLighthouse(`https://example.com`).then((results) =>
+    const { categories } = results.lhr
+    const scores = Object.values(categories).map(({ score }) => score * 100)
+    const calculation = scores.reduce((a, b) => a + b, 0) / scores.length;
+    expect(calculation).toBeGreaterThanOrEqual(50)
   ));
