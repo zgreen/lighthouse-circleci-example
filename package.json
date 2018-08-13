@@ -1,6 +1,6 @@
 {
   "name": "circlci-lighthouse-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An example repo demonstrating Lighthouse testing in CircleCi",
   "main": "index.js",
   "scripts": {
