@@ -16,6 +16,7 @@ const launchChromeAndRunLighthouse = (
   });
 
 test("Meaningful first paint score", () =>
-  launchChromeAndRunLighthouse(`https://example.com`).then(({ audits }) =>
-    expect(audits["first-meaningful-paint"].score).toBeGreaterThanOrEqual(50)
+  launchChromeAndRunLighthouse(`https://example.com`).then(
+    ({ lhr: { audits } }) =>
+      expect(audits["first-meaningful-paint"].score).toBe(1)
   ));

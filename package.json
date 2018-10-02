@@ -1,6 +1,6 @@
 {
   "name": "circlci-lighthouse-example",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "An example repo demonstrating Lighthouse testing in CircleCi",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,8 @@
   "author": "Zach Green",
   "license": "MIT",
   "devDependencies": {
-    "chrome-launcher": "^0.10.2",
-    "jest": "^23.5.0",
-    "lighthouse": "^2.9.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/zgreen/lighthouse-circleci-example.git"
+    "chrome-launcher": "^0.10.5",
+    "jest": "^23.6.0",
+    "lighthouse": "^3.2.1"
   }
 }
