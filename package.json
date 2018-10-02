@@ -14,8 +14,8 @@
   "author": "Zach Green",
   "license": "MIT",
   "devDependencies": {
-    "chrome-launcher": "^0.10.2",
-    "jest": "^22.4.3",
-    "lighthouse": "^2.9.4"
+    "chrome-launcher": "^0.10.5",
+    "jest": "^23.6.0",
+    "lighthouse": "^3.2.1"
   }
 }
